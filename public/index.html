@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- START SCREEN -->
+  <div id="startScreen" class="screen">
+    <div class="card">
+      <div class="quiz-icon">🧠</div>
+      <h1>Tech Quiz</h1>
+      <p>Test your knowledge of Technology & Programming</p>
+      <div class="info-row">
+        <div class="info-badge">📝 10 Questions</div>
+        <div class="info-badge">⏱️ 15s per question</div>
+        <div class="info-badge">💡 1 point each</div>
+      </div>
+      <button class="btn btn-primary" onclick="startQuiz()">Start Quiz →</button>
+    </div>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div id="quizScreen" class="screen hidden">
+
+    <div class="quiz-topbar">
+  <span id="questionCount" class="q-count">Question 1 of 10</span>
+  <div class="global-timer" id="globalTimer">
+    <span class="timer-icon">⏱️</span>
+    <span id="timerText">15:00</span>
+  </div>
+  <span id="scoreTracker" class="score-badge">⭐ 0</span>
+</div>
+
+    <div class="progress-bar">
+      <div id="progressFill" class="progress-fill"></div>
+    </div>
+
+    <div class="card question-card">
+      <p class="question-num" id="questionNum">Q1</p>
+      <p id="questionText" class="question-text"></p>
+      <div id="optionsGrid" class="options-grid"></div>
+      <div class="action-row">
+        <button class="btn btn-skip" id="skipBtn" onclick="skipQuestion()">Skip ⏭️</button>
+        <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()" disabled>Next →</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RESULT SCREEN -->
+  <div id="resultScreen" class="screen hidden">
+    <div class="card result-card">
+      <div id="resultEmoji" class="quiz-icon"></div>
+      <h2 id="resultTitle"></h2>
+      <div class="score-display">
+        <span id="finalScore" class="score-num"></span>
+        <span class="score-label">/ 10</span>
+      </div>
+      <div class="score-stats">
+        <div class="stat-box correct-box">
+          <span id="correctCount">0</span>
+          <span>Correct</span>
+        </div>
+        <div class="stat-box wrong-box">
+          <span id="wrongCount">0</span>
+          <span>Wrong</span>
+        </div>
+        <div class="stat-box skip-box">
+          <span id="skipCount">0</span>
+          <span>Skipped</span>
+        </div>
+      </div>
+      <p id="resultMsg" class="result-msg"></p>
+      <div id="resultsList" class="results-list"></div>
+      <button class="btn btn-primary" onclick="restartQuiz()">Try Again →</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "options": ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Logic", "Home Tool Markup Language"],
+    "answer": "Hyper Text Markup Language"
+  },
+  {
+    "id": 2,
+    "question": "Which language runs in the browser?",
+    "options": ["Python", "Java", "JavaScript", "C++"],
+    "answer": "JavaScript"
+  },
+  {
+    "id": 3,
+    "question": "What does CSS stand for?",
+    "options": ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style System", "Colorful Style Sheets"],
+    "answer": "Cascading Style Sheets"
+  },
+  {
+    "id": 4,
+    "question": "Which one is a JavaScript framework?",
+    "options": ["Django", "Laravel", "React", "Flask"],
+    "answer": "React"
+  },
+  {
+    "id": 5,
+    "question": "What is Node.js?",
+    "options": ["A browser", "A database", "A JavaScript runtime", "A CSS framework"],
+    "answer": "A JavaScript runtime"
+  },
+  {
+    "id": 6,
+    "question": "Which symbol is used for comments in JavaScript?",
+    "options": ["#", "//", "**", "$$"],
+    "answer": "//"
+  },
+  {
+    "id": 7,
+    "question": "What does API stand for?",
+    "options": ["Applied Programming Interface", "Application Programming Interface", "Automated Process Integration", "App Performance Index"],
+    "answer": "Application Programming Interface"
+  },
+  {
+    "id": 8,
+    "question": "Which HTTP method is used to send data?",
+    "options": ["GET", "DELETE", "POST", "FETCH"],
+    "answer": "POST"
+  },
+  {
+    "id": 9,
+    "question": "What is Git used for?",
+    "options": ["Designing websites", "Version control", "Running servers", "Writing CSS"],
+    "answer": "Version control"
+  },
+  {
+    "id": 10,
+    "question": "Which extension does a JavaScript file use?",
+    "options": [".java", ".js", ".jsx", ".json"],
+    "answer": ".js"
+  }
+]
